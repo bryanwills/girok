@@ -4,8 +4,7 @@ from enum import Enum
 import typer
 
 # App Config
-BASE_URL = "http://girok-server-balancer-1565927748.ap-northeast-1.elb.amazonaws.com:8181/api/v1/"
-# BASE_URL = "http://girok-server-balancer-1565927748.ap-northeast-1.elb.amazonaws.com:8080/api/v1/"
+BASE_URL = "girok-server-prod-2104060695.ap-northeast-1.elb.amazonaws.com/api/v1/"
 APP_NAME = "girok"
 APP_DIR = typer.get_app_dir(APP_NAME)
 CONFIG_PATH = os.path.join(APP_DIR, "config.json")
